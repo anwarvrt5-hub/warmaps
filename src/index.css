@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* Leaflet Dark Mode Custom Styling */
+.leaflet-popup-content-wrapper {
+  background: #121624 !important;
+  color: #e8edf5 !important;
+  border: 1px solid #1e2433 !important;
+  border-radius: 8px !important;
+  font-family: 'Fira Code', 'JetBrains Mono', monospace !important;
+}
+
+.leaflet-popup-tip {
+  background: #121624 !important;
+  border: 1px solid #1e2433 !important;
+}
+
+.leaflet-container {
+  font-family: 'Inter', sans-serif !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2433;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00b4ff;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(18, 22, 36, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Terminal typing animation cursor */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.terminal-cursor::after {
+  content: '▋';
+  animation: blink 1s step-start infinite;
+}
+
